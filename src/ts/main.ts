@@ -1,3 +1,5 @@
+/// <reference types="vite/client" />
+
 import "../styles/main.css";
 
 import { initCart } from "./components/cart";
