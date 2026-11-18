@@ -1,0 +1,158 @@
+<div class="consumer">
+    <span>SEMANA DO</span>
+    <strong>CONSUMIDOR</strong>
+    <span>✦</span>
+
+    <small>
+        FRETE GRÁTIS EM COMPRAS ACIMA DE R$ 199,00
+    </small>
+</div>
+
+
+<!-- Cabeçalho da loja -->
+<header>
+
+    <div class="head">
+
+        <!-- Menu mobile -->
+        <button
+            class="menu-btn"
+            type="button"
+            aria-label="Abrir menu"
+            aria-controls="mobile-nav"
+        >
+            ☰
+        </button>
+
+
+        <!-- Logo -->
+        <a class="logo" href="#" aria-label="Amakha Paris - Página inicial">
+            <span>♛</span>
+            <strong>AMAKHA</strong>
+            <small>PARIS</small>
+        </a>
+
+
+        <!-- Campo de pesquisa -->
+        <form class="search" role="search">
+
+            <input
+                type="search"
+                name="search"
+                placeholder="Qual produto você procura?"
+                aria-label="Pesquisar produtos"
+            >
+
+            <button type="submit" aria-label="Pesquisar">
+                ⌕
+            </button>
+
+        </form>
+
+
+        <!-- Acesso à conta -->
+        <button class="account" type="button">
+
+            <span>◎ MINHA CONTA</span>
+
+            <small>
+                Entre ou cadastre-se
+            </small>
+
+        </button>
+
+
+        <!-- Acesso ao carrinho -->
+        <button
+            class="cart-open"
+            type="button"
+            aria-label="Abrir carrinho de compras"
+        >
+            ♡　♧
+
+            <i class="cart-count" aria-live="polite">
+                0
+            </i>
+        </button>
+
+    </div>
+
+
+    <!-- Menu principal -->
+    <nav aria-label="Navegação principal">
+
+        <a href="#products">PERFUMARIA⌄</a>
+        <a href="#products">CABELOS⌄</a>
+        <a href="#products">CORPO E BANHO⌄</a>
+        <a href="#products">ROSTO⌄</a>
+        <a href="#products">NUTRICIONAL⌄</a>
+        <a href="#products">♧ REVENDA⌄</a>
+        <a href="#promos">☼ PROMOÇÕES</a>
+
+    </nav>
+
+
+    <!-- Menu para dispositivos móveis -->
+    <nav
+        class="mobile-nav"
+        id="mobile-nav"
+        aria-label="Navegação mobile"
+        hidden
+    >
+
+        <a href="#products">PERFUMARIA</a>
+        <a href="#promos">PROMOÇÕES</a>
+
+    </nav>
+
+</header>
+
+
+
+<!-- Fundo escuro ao abrir o carrinho -->
+<div class="overlay"></div>
+
+
+
+<!-- Carrinho lateral -->
+<aside
+    class="cart"
+    aria-label="Carrinho de compras"
+>
+
+    <!-- Cabeçalho do carrinho -->
+    <div class="cart-head">
+
+        <strong>Meu carrinho</strong>
+
+        <button
+            class="cart-close"
+            type="button"
+            aria-label="Fechar carrinho"
+        >
+            ×
+        </button>
+
+    </div>
+
+
+    <!-- Lista de produtos adicionados -->
+    <div class="cart-items" aria-live="polite">
+
+        <p>Seu carrinho está vazio.</p>
+
+    </div>
+
+
+    <!-- Resumo da compra -->
+    <div class="cart-bottom">
+
+        <span>Total:</span>
+
+        <strong class="total">
+            R$ 0,00
+        </strong>
+
+    </div>
+
+</aside>
