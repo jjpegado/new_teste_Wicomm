@@ -29,9 +29,7 @@ async function loadPartial(
     container.innerHTML = await response.text();
 }
 
-/**
- * Inicializa a página depois de carregar header, conteúdo e rodapé.
- */
+
 async function initializePage(): Promise<void> {
     const base = import.meta.env.BASE_URL;
 

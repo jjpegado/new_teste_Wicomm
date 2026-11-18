@@ -165,33 +165,6 @@ nav a {
     object-fit: cover;
 }
 
-/* .hero-copy {
-    background: #d99eaa;
-    color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    line-height: .98;
-}
-
-.hero-copy strong {
-    font-size: clamp(23px, 4vw, 52px);
-    font-weight: 900;
-}
-
-.hero-copy b {
-    font-size: clamp(8px, 1.3vw, 16px);
-}
-
-.hero-copy a {
-    background: white;
-    color: #555;
-    border-radius: 20px;
-    padding: 5px 15px;
-    font-size: 9px;
-    margin-top: 10px;
-} */
 
 /* OFERTAS */
 
@@ -878,7 +851,6 @@ footer {
 
     .hero {
         height: 125px;
-        grid-template-columns: 58% 42%;
     }
 
     .hero-copy strong {
@@ -935,10 +907,15 @@ footer {
     .wide-banners {
         padding: 6px 3px;
         gap: 4px;
+        grid-auto-flow: row;
     }
 
     .promos > div img {
         min-height: 55px;
+    }
+
+     .wide-banners img{
+        height: auto;
     }
 
     .blog {

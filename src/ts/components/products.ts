@@ -2,11 +2,6 @@ import { formatCurrency, products } from "../data/products";
 
 const carouselIds = ["best", "fragrance", "routine"];
 
-/**
- * Monta os cards e adiciona controles de navegação a cada vitrine.
- * Os produtos são repetidos de propósito para demonstrar a navegação
- * sem precisar cadastrar itens fictícios adicionais.
- */
 export function renderProducts(): void {
     carouselIds.forEach((carouselId) => {
         const productGrid = document.getElementById(carouselId);
