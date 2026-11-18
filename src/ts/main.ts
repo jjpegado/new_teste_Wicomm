@@ -31,10 +31,12 @@ async function loadPartial(
  * Inicializa a página depois de carregar header, conteúdo e rodapé.
  */
 async function initializePage(): Promise<void> {
+    const base = import.meta.env.BASE_URL;
+
     await Promise.all([
-        loadPartial("header-root", "/src/partials/header.html"),
-        loadPartial("main-root", "/src/partials/main.html"),
-        loadPartial("footer-root", "/src/partials/footer.html"),
+        loadPartial("header-root", `${base}src/partials/header.html`),
+        loadPartial("main-root", `${base}src/partials/main.html`),
+        loadPartial("footer-root", `${base}src/partials/footer.html`),
     ]);
 
     renderProducts();
